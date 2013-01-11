@@ -4,6 +4,7 @@
  */
 package com.juacompe.jenkins;
 
+import com.juacompe.jenkinsandbox.User;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -39,7 +40,15 @@ public class TestUser {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
-         assertEquals(2, 1 + 1);
+     public void createJohn() {
+         User user = new User("John");   
+         assertEquals("John", user.name);
+     }
+     
+     @Test
+     public void createJack() {
+         User user = new User("Jack");
+         
+         assertEquals("Jack", user.name);
      }
 }
