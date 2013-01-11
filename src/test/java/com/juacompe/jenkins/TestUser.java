@@ -40,6 +40,6 @@ public class TestUser {
     //
      @Test
      public void hello() {
-         assertEquals(3, 1 + 1);
+         assertEquals(2, 1 + 1);
      }
 }
